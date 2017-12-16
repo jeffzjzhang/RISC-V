@@ -19,12 +19,14 @@ typedef Word    Address;
 typedef Word    Register;
 
 /* processor structure: 
-     32 registers
+     32 general registers
      program counter
+	 flag register
  */
 typedef struct {
     Register X[32];
     Register PC;
+	Register fReg;
 } Processor;
 
 /* length of data type in bytes, used to align memory */
