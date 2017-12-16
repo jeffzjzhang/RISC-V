@@ -26,7 +26,14 @@ typedef Word    Register;
 typedef struct {
     Register X[32];
     Register PC;
-	Register statusReg;
+    struct {	
+        unsigned int carryF    : 1;
+        unsigned int zeroF     : 1;
+        unsigned int signF     : 1;
+        unsigned int overflowF : 1;
+        unsigned int parityF   : 1;
+        unsigned int           : 27;
+    } statusReg;
 } Processor;
 
 /* length of data type in bytes, used to align memory */
