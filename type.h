@@ -21,12 +21,12 @@ typedef Word    Register;
 /* processor structure: 
      32 general registers
      program counter
-	 flag register
+	 status register
  */
 typedef struct {
     Register X[32];
     Register PC;
-	Register fReg;
+	Register statusReg;
 } Processor;
 
 /* length of data type in bytes, used to align memory */
