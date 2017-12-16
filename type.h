@@ -48,7 +48,7 @@ typedef enum {
    For details, please refer to the RISC-V green card.  
    also add some extra structure to simplify the codes */
 typedef union {
-    /* simpler to access the opcode */
+    /* to access the opcode easily and logically */
     struct {
         unsigned int opcode : 7;
         unsigned int        : 25;
@@ -103,6 +103,7 @@ typedef union {
         unsigned int imm20  : 20;
     } utype;
 
+    /* UJ-type */
     struct {
         unsigned int opcode : 7;
         unsigned int rd     : 5;
