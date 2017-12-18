@@ -24,3 +24,7 @@ int get_store_offset(instruc);
 int handle_invalid_instruction(instruc);
 int handle_invalid_read(instruc);
 int handle_invalid_write(instruc);
+
+/* load or store data into memory */
+Word loading(Byte*, Address, Alignment, bool);
+void storing(Byte*, Address, Alignment, Word, bool);
