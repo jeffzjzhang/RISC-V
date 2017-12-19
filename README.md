@@ -1,3 +1,3 @@
 # RISC-V Simulator
-add the flag register.
+add the status register.
 
