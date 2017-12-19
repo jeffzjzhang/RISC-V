@@ -2,7 +2,7 @@
 
 #include "type.h"
 
-typedef Instruction instruc;
+typedef Instruction instr;
 typedef Address     addr;
 
 /* macros of printf formats */
@@ -16,14 +16,17 @@ typedef Address     addr;
 
 /* helper functions */
 int ext_signer(unsigned int, unsigned int);
-int get_branch_offset(instruc);
-int get_jal_offset(instruc);
-int get_store_offset(instruc);
+int get_branch_offset(instr);
+int get_jal_offset(instr);
+int get_store_offset(instr);
 
 /* exception handler */
-int handle_invalid_instruction(instruc);
-int handle_invalid_read(instruc);
-int handle_invalid_write(instruc);
+int handle_invalid_instruction(instr);
+int handle_invalid_read(instr);
+int handle_invalid_write(instr);
+
+/* check that the address is aligned correctly */
+bool check_align(Address, Alignment); 
 
 /* load or store data into memory */
 Word loading(Byte*, Address, Alignment, bool);
