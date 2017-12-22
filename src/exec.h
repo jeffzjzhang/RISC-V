@@ -25,6 +25,3 @@ void exec_sbtype_instr(Instruction, Processor*);
 void exec_utype_instr(Instruction, Processor*);
 void exec_ujtype_instr(Instruction, Processor*);
 void exec_ecall_instr(Instruction, Byte*);
-
-/* helper functions */
-int check_alignment(Address, Alignment);
