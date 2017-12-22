@@ -27,3 +27,6 @@ void print_sbtype_instr(Instruction);
 void print_utype_instr(Instruction);
 void print_ujtype_instr(Instruction);
 void print_ecall_instr(Instruction);
+
+/**/
+void __print_rtype_format(Instruction);
