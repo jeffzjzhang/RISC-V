@@ -1,9 +1,6 @@
 /* Declarations of disassembler core functions
  * and some format printing functions. */
 
-#include <stdio.h>
-#include <stdlib.h>
-
 #include "type.h"
 #include "util.h"
 
