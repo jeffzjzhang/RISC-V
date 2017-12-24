@@ -12,3 +12,4 @@ void decode_instruction(Instruction instr) {
             break;
     }
 } 
+
